@@ -27,7 +27,7 @@ console.log(typeof (+'5'));
 console.log(typeof (parseInt('15px', 10)));
 
 //4
-let answr = +prompt('answer', "");
+let answr = +prompt('answer', '');
 
 // To Boolean 
 // 0, '', null, undefined, NaN -- false
