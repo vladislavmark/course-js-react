@@ -10,7 +10,8 @@
 // console.log(document.querySelector('#current').parentElement); //получить родителя
 
 // console.log(document.querySelector('[data-current="3"]').nextElementSibling); //получить data atribute & next element
-// console.log(document.querySelector('[data-current="3"]').previousElementSibling); //получить data atribute & prev eleme
+// console.log(document.querySelector('[data-current="3"]').previousElementSibling); 
+//получить data atribute & prev elemement
 
 for (let node of document.body.childNodes) { //перебрать все елементы убирая #text
     if (node.nodeName == '#text') {
