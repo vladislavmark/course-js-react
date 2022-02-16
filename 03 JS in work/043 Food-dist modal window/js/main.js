@@ -50,20 +50,20 @@ window.addEventListener('DOMContentLoaded', () => {
         const minutes = Math.floor((t / (1000 * 60)) % 60);
         const seconds = Math.floor((t / 1000) % 60);
 
-        // return {
-        //     'total': t,
-        //     'day': day,
-        //     'hours': hours,
-        //     'minutes': minutes,
-        //     'seconds': seconds,
-        // };
         return {
-            t,
-            day,
-            hours,
-            minutes,
-            seconds,
+            'total': t,
+            'day': day,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds,
         };
+        // return {
+        //     t,
+        //     day,
+        //     hours,
+        //     minutes,
+        //     seconds,
+        // };
     }
 
     function getZero(num) { // якщо число менше 10 то спереду додати 0 (05)
