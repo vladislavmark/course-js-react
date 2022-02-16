@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Timer 
 
-    const dedline = '2022-02-21';
+    const dedline = '2022-02-01';
 
     function getTimeRemaining(endtime) {
         const t = Date.parse(endtime) - Date.parse(new Date());
@@ -50,20 +50,20 @@ window.addEventListener('DOMContentLoaded', () => {
         const minutes = Math.floor((t / (1000 * 60)) % 60);
         const seconds = Math.floor((t / 1000) % 60);
 
-        // return {
-        //     'total': t,
-        //     'day': day,
-        //     'hours': hours,
-        //     'minutes': minutes,
-        //     'seconds': seconds,
-        // };
         return {
-            t,
-            day,
-            hours,
-            minutes,
-            seconds,
+            'total': t,
+            'day': day,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds,
         };
+        // return {
+        //     t,
+        //     day,
+        //     hours,
+        //     minutes,
+        //     seconds,
+        // };
     }
 
     function getZero(num) { // якщо число менше 10 то спереду додати 0 (05)
