@@ -39,9 +39,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Timer 
+    // Timer  
 
-    const dedline = '2022-02-12';
+    const dedline = '2022-12-12';
 
     function getTimeRemaining(endtime) {
         const t = Date.parse(endtime) - Date.parse(new Date());

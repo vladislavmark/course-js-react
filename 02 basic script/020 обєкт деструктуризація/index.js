@@ -15,6 +15,8 @@ options.makeTest(); //method object
 
 const { border, bg } = options.colors; //деструктуризация 
 
+console.log(border);
+
 // console.log(options.name);
 
 // delete options.name;

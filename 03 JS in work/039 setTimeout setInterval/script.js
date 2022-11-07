@@ -28,7 +28,7 @@ btn.addEventListener('click', myAnimation);
 
 // function logger() {
 //     if (i === 3) {
-//         clearInterval(timerId);
+//         clearInterval(timerId); //відмінити виконання timerId
 //     }
 //     console.log('test2');
 //     i++;

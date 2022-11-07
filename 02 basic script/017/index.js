@@ -13,3 +13,7 @@ console.log(Math.round(num));
 
 const test = "12.6px";
 console.log(parseInt(test));
+
+
+
+

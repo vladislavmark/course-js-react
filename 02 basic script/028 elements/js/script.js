@@ -12,6 +12,7 @@ const hearts = document.querySelectorAll('.heart');
 hearts.forEach(item => {
     console.log(item);
 });
+// console.log(hearts);
 
 const oneHeart = document.querySelector('.heart');
 console.log(oneHeart);
