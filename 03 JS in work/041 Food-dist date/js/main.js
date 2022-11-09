@@ -41,14 +41,25 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Timer  
 
-    const dedline = '2022-12-12';
+    const dedline = '2021-12-12';
 
     function getTimeRemaining(endtime) {
+        let day, hours, minutes, seconds;
+
         const t = Date.parse(endtime) - Date.parse(new Date());
-        const day = Math.floor(t / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((t / (1000 * 60 * 60) % 24));
-        const minutes = Math.floor((t / (1000 * 60)) % 60);
-        const seconds = Math.floor((t / 1000) % 60);
+
+        if (t <= 0) {
+            day = 0;
+            hours = 0;
+            minutes = 0;
+            seconds = 0;
+        } else {
+            day = Math.floor(t / (1000 * 60 * 60 * 24));
+            hours = Math.floor((t / (1000 * 60 * 60) % 24));
+            minutes = Math.floor((t / (1000 * 60)) % 60);
+            seconds = Math.floor((t / 1000) % 60);
+        }
+
 
         // return {
         //     'total': t,
@@ -100,4 +111,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
     setClock('.timer', dedline);
 
-});  
+});
