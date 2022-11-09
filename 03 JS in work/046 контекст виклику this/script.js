@@ -32,6 +32,8 @@
 // const ivan = new User('Ivan', 28);
 // ivan.hello(); 
 
+// console.log(ivan);
+
 // 4
 // function sayName(surname) {
 //     console.log(this);
@@ -43,7 +45,7 @@
 // sayName.call(user, ' Smith');
 // sayName.apply(user, [' Smerch']);
 
-
+// 4    function bind
 // function count(num) {
 //     return this * num;
 // }
