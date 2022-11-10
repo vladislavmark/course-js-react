@@ -82,6 +82,14 @@ const obj = {
     }
 };
 obj.sayNumber();
+
+// const obj = {
+//     num: 5,
+//     sayNumber: function () {
+//         console.log(this.num);
+//     }
+// };
+// obj.sayNumber();
 // в стрелочной функции нет своего контекста вызова он берет его в своего родителя 
 
 const double = (a) => a * 2;
